@@ -9,12 +9,19 @@
     - Base case
     - Different Input
 */
-// Using Recursion
-// Another Recursive Function
+// Writing Factorial Iteratively
+// 4! ( Four Factorial ) 4 * 3 * 2 * 1
 
-function sumRange(num) {
-    if (num === 1) return 1;
-    return num + sumRange(num - 1);
+function factorial(num) {
+    let total = 1;
+
+    for (let i = num; i > 0; i--) {
+        total *= i;
+    }
+    return total;
 }
-sumRange(4);
+
+var fact = factorial(3);
+
+console.log(fact);
 
